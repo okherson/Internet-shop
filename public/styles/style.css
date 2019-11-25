@@ -1,0 +1,436 @@
+* {
+	margin: 0;
+	padding:0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	min-width: 800px;
+	font-size: 1.2em;
+	background-color: #fff;
+	color: #555;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+}
+
+p {
+	padding: 0 0 5% 0;
+	line-height: 1.7em;
+}
+
+input[type="text"], input[type="password"], input[type="search"], input[type="date"] {
+	color: #5d5d5d;
+	width: 60%;
+	padding: 1.5%;
+}
+
+input, textarea {
+	outline: none;
+	border: none;
+	border: solid 1px #f2f2f2;
+}
+
+h1, h2 {
+	font: normal 150% 'century gothic', arial;
+	margin: 0 0 1% 0;
+	padding: 1% 0 0 0;
+	color: #000;
+}
+
+h2 {
+	font-size: 140%;
+}
+
+a, a:hover {
+	outline: none;
+	text-decoration: underline;
+	color: #aeb002;
+}
+
+.header {
+	background-color: #212121;
+	height: 135px;
+	font-size: 0.8em;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
+	display: inline-block;
+}
+
+ul.menu {
+
+	margin: 0 0 1% 3%;
+}
+
+ul.menu li {
+	margin: 0 0 2% 0;
+	padding: 0 0 1% 2%;
+	line-height: 1.5em;
+}
+
+hr, .content hr {
+	border: solid 1px #f3f3f3;
+}
+
+.main {
+	height: 100%;
+}
+
+.logo {
+	height: 100px;
+	width: 80%;
+	display: inline-block;
+	margin-left: 20%;
+}
+
+.logo_text {
+	width: 500px;
+}
+
+.logo h1, .logo h2 {
+	font: normal 300% 'century gothic', arial, sans-serif;
+	margin: 0 0 0 1%;
+}
+
+.logo_text h1, .logo_text h1 a, .logo_text h1 a:hover {
+	width: 500px;
+	padding: 2% 0 0 0;
+	color: #fff;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+}
+
+.logo_text h2 {
+	font-size: 0.9em;
+	padding-bottom: 1% 0 0 0;
+	color: #999;
+}
+
+#user_office {
+	width: 200px;
+	display: inline;
+	float: right;
+	padding: 0 1% 0 0;
+}
+
+#user_office h3 {
+	text-decoration: none;
+}
+
+.header_basket, .header_basket:hover {
+	text-decoration: none;
+}
+
+.header_basket::after {
+	color: black;
+	text-decoration: none;
+	background: #529060;
+	border-radius: 50%;
+	padding: 0 4px;
+	content: attr(count);
+	position: relative;
+	top: -35px;
+	left: -10px;
+}
+
+.header_img {
+	width: 50px;
+}
+
+.header_img:hover {
+	zoom: 1.1;
+}
+
+.menubar {
+	width: 100%;
+}
+
+ul.menu {
+	text-align: center;
+}
+
+ul.menu li {
+	list-style: none;
+	margin: 1px 2px 0 0;
+	display: inline-block;
+}
+
+ul.menu li a {
+	font: normal 100% 'trebushet ms', sans-serif;
+	display: block;
+	font-size: 1.5em;
+	color: #fff;
+	text-decoration: none;
+}
+
+ul.menu li.selected a {
+	color: #aeb002;
+}
+
+ul.menu li a:hover {
+	color: #e4ec04;
+}
+
+.site_content {
+	display: inline-block;
+	width: 100%;
+	height: 85%;
+	overflow:hidden;
+	margin-top: 1%;
+	padding: 2%;
+	background-color: white;
+}
+
+.btn {
+	float: left;
+	margin-left: 9%;
+	padding: 8px;
+	background-color: white;
+	cursor: pointer;
+	border-radius: 10%;
+}
+
+ .lables_passreg_text {
+ 	font-size: 0.8em;
+ 	margin-top: 3%;
+ 	margin-left: 2%;
+ }
+
+.content {
+	width: 90%;
+	text-align: center;
+	min-height: calc(91.6% - 150px);
+	margin-left: 3%;
+	display: inline-block;
+}
+
+.content a {
+	text-decoration: none;
+	color: #5b5a5a;
+}
+
+.content a:hover {
+	color: #aeb002;
+}
+
+.prod_block {
+	margin-bottom: 5%;
+}
+
+.posts_content {
+	font: 0.8em;
+}
+
+.prod_block img {
+	border-radius: 5px;
+	border: solid 5px #dad7d5;
+	width: 150px;
+}
+
+.prod_block img:hover {
+	border: solid 5px #aeb002;
+}
+
+
+.info_good_page .value {
+	font-size: 1em;
+	color: #49945a;
+	margin-right: 3%;
+}
+
+.reviews {
+	margin-bottom: 4%;
+	font-size: 0.9em;
+}
+
+.reviews .reviews_name {
+	background-color: #7268ad;
+	color: white;
+	padding: 1%;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.reviews .reviews_text {
+	padding-top: 1%;
+	padding-bottom: 2%;
+	padding-left: 2%;
+}
+
+.send input[type="text"], .send input[type="date"], .send input[type="password"], .send textarea {
+	border: solid 1px #c3c3c3;
+	margin-bottom: 1%;
+}
+
+.send input[type="text"], .send input[type="date"], .send input[type="password"] {
+	width: 80%;
+	height: 10px;
+}
+
+.send textarea {
+	width: 83%;
+	height: 200px;
+}
+
+.send input[type="submit"] {
+	background-color: #212121;
+	color: white;
+	border-radius: 5px;
+}
+
+.item_tab {
+	margin-top: 1%;
+}
+
+.tab {
+	text-align: left;
+	height: 100px;
+}
+
+.tab img {
+	height: 200px;
+	width: 150px;
+	text-align: center;
+}
+
+.info_goods_form {
+	padding: 0.5%;
+	width: 45%;
+	float: left;
+	text-align: center;
+}
+
+.item_filter {
+	border-style: none;
+	color: black;
+	background-color: #5d5d5d;
+	width: 100%;
+	margin: 1% 0 1% 0;
+}
+
+.btn_filter {
+	height: 30px;
+	width: 100px;
+	background-color: #a2a2a2;
+}
+
+.btn_filter:hover {
+	background-color: #b1935a;
+}
+
+.button {
+	background-color: #212121;
+	padding: 2%;
+	color: white;
+	border-radius: 5px;
+	float: right;
+	margin-top: 5%;
+	clear: both;
+	font-size: 0.8em;
+}
+
+.button a {
+	color: white;
+}
+
+.basket_table {
+	width:100%
+}
+
+.tab {
+	width: 95%;
+	border: solid 1px #f4f4f4;
+	height: 230px;
+	background-color: #f9f9f9;
+	margin-left: 5%
+
+}
+
+td, th {
+	padding: 1%;
+	border: solid 1px #f4f4f4;
+	text-align: center;
+}
+
+td img {
+	vertical-align: middle;
+}
+
+.add_prod, .to_shop {
+	padding: 5%;
+	background-color: #b9d0b9;
+	width: 100px;
+}
+
+.add_prod:hover, .to_shop:hover {
+	background-color: #529060;
+	font-weight: 900;
+}
+
+.center {
+	text-align: center;
+}
+
+.rating {
+	font-weight: bold;
+}
+
+.menu_btn {
+	background-color: #212121;
+     padding: 5%; 
+    color: white;
+    border-radius: 5px;
+    font-size: 1vw;
+    padding-left: 1%;
+}
+
+.menu_btn:hover {
+	background-color: #aeb002;
+	padding: 5%;
+}
+
+.btn_adm_des {
+    padding: 1%;
+    margin-top: 1%;
+    border-radius: 5px;
+    border: solid 1px #a09a9a;
+}
+
+.btn_adm_des:hover {
+	background-color: #aeb002;
+}
+
+.inp_adm {
+    border-radius: 5px;
+	border: solid 1px #a09a9a;
+}
+
+
+.footer {
+	width: 100%;
+	height: 12%;
+	padding: 1% 0 1% 0;
+	text-align: center;
+	background-color: #212121;
+	color: #a8aa94;
+	bottom: 0;
+	position: relative;
+	display: block;
+}
+
+.footer a {
+	color: #a8aa94;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer p {
+	padding: 0;
+}

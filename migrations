@@ -1,0 +1,59 @@
+
+CREATE TABLE okm_users (
+    id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    login varchar(25),
+    passwd varchar(64),
+    first_name varchar(50),
+    second_name varchar(50),
+    b_day date,
+    phone_number varchar(10),
+    email varchar(50),
+    usr_type tinyint(1) DEFAULT 0
+);
+
+
+CREATE TABLE user_type ( 
+    id int(2),
+    type varchar(25));
+
+INSERT INTO `user_type` (`id`, `type`) 
+VALUES ('0', 'user'), ('1', 'admin');
+
+
+
+CREATE TABLE  vehicle_type (
+	id int(2),
+	title_ru varchar(25)
+);
+
+INSERT INTO `vehicle_type` (`id`, `title_ru`) 
+VALUES ('1', 'monowheel'), ('2', 'scooter'), ('3', 'electric_bicycle');
+
+CREATE TABLE vehicles (
+	id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	title_ru varchar (25),
+	cost decimal(10, 2),
+	photo_location varchar(25),
+	description varchar(255),
+	vehicle_type tinyint(3)
+);
+
+CREATE TABLE sales (
+    id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    user_id int(5),
+    item_id int(5),
+    item_cost decimal(10, 2),
+    item_number int(4),
+    sale_date date,
+    payment_confirmation tinyint(1),
+    delivery_confirmation tinyint(1)
+);
+
+CREATE TABLE basket (
+    id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    user_id int(5),
+    item_id int(5),
+    item_cost decimal(10, 2),
+    item_number int(4),
+    sales_confirmation tinyint(1)
+);
